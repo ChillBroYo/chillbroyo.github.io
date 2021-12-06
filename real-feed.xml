@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+<channel>
+<atom:link href="https://feeds.simplecast.com/dHoohVNH" rel="self" title="MP3 Audio" type="application/atom+xml"/>
+<atom:link xmlns="http://www.w3.org/2005/Atom" href="https://simplecast.superfeedr.com/" rel="hub"/>
+<generator>https://simplecast.com</generator>
+<title>Conan O’Brien Needs A Friend</title>
+<description>After 25 years at the Late Night desk, Conan realized that the only people at his holiday party are the men and women who work for him. Over the years and despite thousands of interviews, Conan has never made a real and lasting friendship with any of his celebrity guests. So, he started a podcast to do just that.Deeper, unboundedly playful, and free from FCC regulations, Conan O’Brien Needs a Friend is a weekly opportunity for Conan to hang out with the people he enjoys most and perhaps find some real friendship along the way.</description>
+<language>en-us</language>
+<pubDate>Thu, 2 Dec 2021 05:00:00 +0000</pubDate>
+<lastBuildDate>Thu, 2 Dec 2021 05:00:15 +0000</lastBuildDate>
+<image>
+<link>https://www.earwolf.com/show/conan-obrien/</link>
+<title>Conan O’Brien Needs A Friend</title>
+<url>https://image.simplecastcdn.com/images/5b7d8c77-15ba-4eff-a999-2e725db21db5/2ca29cb6-c010-4780-a9ba-7e5e1729f565/3000x3000/conaf-cover.jpg?aid=rss_feed</url>
+</image>
+<link>https://www.earwolf.com/show/conan-obrien/</link>
+<itunes:type>episodic</itunes:type>
+<itunes:summary>After 25 years at the Late Night desk, Conan realized that the only people at his holiday party are the men and women who work for him. Over the years and despite thousands of interviews, Conan has never made a real and lasting friendship with any of his celebrity guests. So, he started a podcast to do just that.Deeper, unboundedly playful, and free from FCC regulations, Conan O’Brien Needs a Friend is a weekly opportunity for Conan to hang out with the people he enjoys most and perhaps find some real friendship along the way.</itunes:summary>
+<itunes:author>Team Coco & Earwolf</itunes:author>
+<itunes:explicit>yes</itunes:explicit>
+<itunes:image href="https://image.simplecastcdn.com/images/5b7d8c77-15ba-4eff-a999-2e725db21db5/2ca29cb6-c010-4780-a9ba-7e5e1729f565/3000x3000/conaf-cover.jpg?aid=rss_feed"/>
+<itunes:new-feed-url>https://feeds.simplecast.com/dHoohVNH</itunes:new-feed-url>
+<itunes:owner>
+<itunes:name>Team Coco & Earwolf</itunes:name>
+<itunes:email>conaf@teamcoco.com</itunes:email>
+</itunes:owner>
+<itunes:category text="Comedy"/>
+<item>
+<guid isPermaLink="false">e279a202-5af9-4555-a115-1299144d6e68</guid>
+<title>Kidditch Camp</title>
+<description>
+<![CDATA[ <p>Conan speaks with architect Erik from Milwaukee about designing summer camps and the torture chambers that Conan and his team would design for one another.</p><p><br />Wanna get a chance to talk to Conan? Submit here: <a href="https://www.earwolf.com/episode/pharmacies-and-fast-food-in-cairo/TeamCoco.com/CallConan">TeamCoco.com/CallConan</a></p> ]]>
+</description>
+<pubDate>Thu, 2 Dec 2021 05:00:00 +0000</pubDate>
+<author>conaf@teamcoco.com (Team Coco & Earwolf)</author>
+<link>https://www.earwolf.com/show/conan-obrien/</link>
+<content:encoded>
+<![CDATA[ <p>Conan speaks with architect Erik from Milwaukee about designing summer camps and the torture chambers that Conan and his team would design for one another.</p><p><br />Wanna get a chance to talk to Conan? Submit here: <a href="https://www.earwolf.com/episode/pharmacies-and-fast-food-in-cairo/TeamCoco.com/CallConan">TeamCoco.com/CallConan</a></p> ]]>
+</content:encoded>
+<enclosure length="17029017" type="audio/mpeg" url="https://chtbl.com/track/9E9755/stitcher.simplecastaudio.com/c945bd13-c7f3-4f22-95b5-4bf98e12b21f/episodes/39b341df-afc9-4ea8-9865-ff1751b3fe30/audio/128/default.mp3?aid=rss_feed&awCollectionId=c945bd13-c7f3-4f22-95b5-4bf98e12b21f&awEpisodeId=39b341df-afc9-4ea8-9865-ff1751b3fe30&feed=dHoohVNH"/>
+<itunes:title>Kidditch Camp</itunes:title>
+<itunes:author>Team Coco & Earwolf</itunes:author>
+<itunes:duration>00:17:44</itunes:duration>
+<itunes:summary>Conan speaks with architect Erik from Milwaukee about designing summer camps and the torture chambers that Conan and his team would design for one another. Wanna get a chance to talk to Conan? Submit here: TeamCoco.com/CallConan </itunes:summary>
+<itunes:subtitle>Conan speaks with architect Erik from Milwaukee about designing summer camps and the torture chambers that Conan and his team would design for one another. Wanna get a chance to talk to Conan? Submit here: TeamCoco.com/CallConan </itunes:subtitle>
+<itunes:explicit>yes</itunes:explicit>
+<itunes:episodeType>full</itunes:episodeType>
+</item>
+</channel>
+</rss>
