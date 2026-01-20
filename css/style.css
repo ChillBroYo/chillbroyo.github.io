@@ -1,7 +1,6 @@
 /* =====================================================
    GLOBAL RESET & BASE
 ===================================================== */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -27,12 +26,12 @@
   
   a {
     color: inherit;
+    text-decoration: none;
   }
   
   /* =====================================================
      HEADER
   ===================================================== */
-  
   .site-header {
     position: sticky;
     top: 0;
@@ -86,15 +85,24 @@
   /* =====================================================
      HERO
   ===================================================== */
-  
   .hero {
     background: #f5f8fc;
     padding: 80px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
-  .hero-inner {
-    max-width: 1000px;
-    margin: 0 auto;
+  .hero-text {
+    flex: 1 1 400px;
+  }
+  
+  .hero-image {
+    flex: 1 1 300px;
   }
   
   .hero h1 {
@@ -105,19 +113,14 @@
   .hero p {
     font-size: 1.2rem;
     max-width: 700px;
+    margin-bottom: 12px;
   }
   
   /* =====================================================
      SECTIONS (GENERIC)
   ===================================================== */
-  
   section {
     padding: 64px 24px;
-  }
-  
-  .section-inner {
-    max-width: 1000px;
-    margin: 0 auto;
   }
   
   section h2 {
@@ -126,50 +129,79 @@
   }
   
   /* =====================================================
-     PLATFORM / PRIORITIES
+     VISION
   ===================================================== */
-  
-  .platform-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
+  .vision {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
-  .platform-item {
+  .vision-text {
+    flex: 1 1 400px;
+  }
+  
+  .vision-image {
+    flex: 1 1 400px;
+  }
+  
+  /* =====================================================
+     PILLARS
+  ===================================================== */
+  .pillars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .pillar {
+    flex: 1 1 250px;
     background: #f5f8fc;
     padding: 24px;
     border-radius: 10px;
   }
   
-  .platform-item h3 {
+  .pillar h3 {
     margin-bottom: 12px;
   }
   
   /* =====================================================
      PRESS
   ===================================================== */
-  
   .press-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
-  .press-item {
+  .press-card {
     border: 1px solid #e1e6ef;
     border-radius: 8px;
     padding: 20px;
     background: #ffffff;
   }
   
-  .press-item a {
+  .press-card a {
     color: #0a2540;
     font-weight: 600;
     text-decoration: none;
   }
   
-  .press-item a:hover {
+  .press-card a:hover {
     text-decoration: underline;
+  }
+  
+  .press-card p {
+    margin-bottom: 12px;
   }
   
   .press-source {
@@ -179,18 +211,8 @@
   }
   
   /* =====================================================
-     VOLUNTEER
+     VOLUNTEER BUTTON
   ===================================================== */
-  
-  #volunteer {
-    background: #0a2540;
-    color: #ffffff;
-  }
-  
-  #volunteer h2 {
-    color: #ffffff;
-  }
-  
   .volunteer-btn {
     display: inline-block;
     margin-top: 20px;
@@ -200,7 +222,6 @@
     font-size: 1.1rem;
     font-weight: 700;
     border-radius: 8px;
-    text-decoration: none;
   }
   
   .volunteer-btn:hover {
@@ -208,21 +229,8 @@
   }
   
   /* =====================================================
-     ABOUT PAGE
-  ===================================================== */
-  
-  .about-content {
-    max-width: 800px;
-  }
-  
-  .about-content p {
-    margin-bottom: 16px;
-  }
-  
-  /* =====================================================
      FOOTER
   ===================================================== */
-  
   footer {
     background: #f5f8fc;
     padding: 40px 24px;
@@ -234,7 +242,6 @@
   /* =====================================================
      RESPONSIVE
   ===================================================== */
-  
   @media (max-width: 768px) {
     .header-inner {
       flex-direction: column;
@@ -254,8 +261,27 @@
       margin-left: 0;
     }
   
-    .hero h1 {
-      font-size: 2.2rem;
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-image {
+      margin-top: 24px;
+    }
+  
+    .vision {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .vision-image {
+      margin-top: 24px;
+    }
+  
+    .pillars {
+      flex-direction: column;
+      gap: 16px;
     }
   }
   
