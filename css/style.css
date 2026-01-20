@@ -1,156 +1,261 @@
-/* HERO */
-.hero {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 40px;
-  padding: 80px 60px;
-  background: #f4f6f8;
-  align-items: center;
-}
+/* =====================================================
+   GLOBAL RESET & BASE
+===================================================== */
 
-.hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.hero-subtitle {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-.hero-image img {
-  width: 100%;
-  max-width: 420px;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-/* VISION */
-.vision {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  padding: 80px 60px;
-  align-items: center;
-  background: #ffffff;
-}
-
-.vision-image img {
-  width: 100%;
-  border-radius: 16px;
-}
-
-.vision-text h2 {
-  font-size: 2.4rem;
-  margin-bottom: 20px;
-}
-
-/* PILLARS */
-.pillars {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  padding: 70px 60px;
-  background: #0b3c5d;
-  color: white;
-}
-
-.pillar {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 30px;
-  border-radius: 10px;
-}
-
-.pillar h3 {
-  margin-bottom: 10px;
-  font-size: 1.4rem;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .hero,
-  .vision,
-  .pillars {
-    grid-template-columns: 1fr;
-    padding: 50px 25px;
-    text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
-
-  .hero-image img {
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #0a2540;
+    background: #ffffff;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  a {
+    color: inherit;
+  }
+  
+  /* =====================================================
+     HEADER
+  ===================================================== */
+  
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #0a2540;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .site-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .site-nav a {
+    margin-left: 22px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .site-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .nav-cta {
+    margin-left: 28px;
+    background: #ffd84d;
+    color: #0a2540 !important;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  /* =====================================================
+     HERO
+  ===================================================== */
+  
+  .hero {
+    background: #f5f8fc;
+    padding: 80px 24px;
+  }
+  
+  .hero-inner {
+    max-width: 1000px;
     margin: 0 auto;
   }
-}
-
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: #0f3a44;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-}
-
-.header-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 14px 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.site-header nav a {
-  color: #ffffff;
-  margin-left: 22px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.site-header nav a:hover {
-  text-decoration: underline;
-}
-
-.nav-cta {
-  background: #f2b705;
-  color: #0f3a44 !important;
-  padding: 8px 14px;
-  border-radius: 6px;
-  font-weight: 600;
-}
-
-.press {
-  padding: 80px 24px;
-  background: #f6f4ef;
-}
-
-.press h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-
-.press-grid {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-.press-card {
-  background: #ffffff;
-  padding: 28px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-}
-
-.press-card h3 {
-  margin-bottom: 12px;
-}
-
-.press-card a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #0f3a44;
-  font-weight: 600;
-}
+  
+  .hero h1 {
+    font-size: 2.75rem;
+    margin-bottom: 16px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+  }
+  
+  /* =====================================================
+     SECTIONS (GENERIC)
+  ===================================================== */
+  
+  section {
+    padding: 64px 24px;
+  }
+  
+  .section-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+  }
+  
+  /* =====================================================
+     PLATFORM / PRIORITIES
+  ===================================================== */
+  
+  .platform-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+  }
+  
+  .platform-item {
+    background: #f5f8fc;
+    padding: 24px;
+    border-radius: 10px;
+  }
+  
+  .platform-item h3 {
+    margin-bottom: 12px;
+  }
+  
+  /* =====================================================
+     PRESS
+  ===================================================== */
+  
+  .press-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  
+  .press-item {
+    border: 1px solid #e1e6ef;
+    border-radius: 8px;
+    padding: 20px;
+    background: #ffffff;
+  }
+  
+  .press-item a {
+    color: #0a2540;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .press-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .press-source {
+    font-size: 0.9rem;
+    color: #5a6b85;
+    margin-top: 8px;
+  }
+  
+  /* =====================================================
+     VOLUNTEER
+  ===================================================== */
+  
+  #volunteer {
+    background: #0a2540;
+    color: #ffffff;
+  }
+  
+  #volunteer h2 {
+    color: #ffffff;
+  }
+  
+  .volunteer-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #ffd84d;
+    color: #0a2540;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  
+  .volunteer-btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* =====================================================
+     ABOUT PAGE
+  ===================================================== */
+  
+  .about-content {
+    max-width: 800px;
+  }
+  
+  .about-content p {
+    margin-bottom: 16px;
+  }
+  
+  /* =====================================================
+     FOOTER
+  ===================================================== */
+  
+  footer {
+    background: #f5f8fc;
+    padding: 40px 24px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #5a6b85;
+  }
+  
+  /* =====================================================
+     RESPONSIVE
+  ===================================================== */
+  
+  @media (max-width: 768px) {
+    .header-inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .site-nav {
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+  
+    .site-nav a {
+      margin: 8px 16px 0 0;
+    }
+  
+    .nav-cta {
+      margin-left: 0;
+    }
+  
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+  }
+  
