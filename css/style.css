@@ -327,6 +327,50 @@ footer {
     gap: 40px;
     align-items: center;
   }
+  /* =========================
+   CENTER MIDDLE IMAGES ON MOBILE
+========================= */
+@media (max-width: 768px) {
+
+    /* About page: images in sections */
+    .about-with-image,
+    .about-story-media {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* center child content */
+      text-align: center;
+      gap: 24px; /* maintain spacing between text and image */
+    }
+  
+    .about-with-image .about-image img,
+    .about-story-media .about-image img,
+    .about-video .video-wrapper {
+      max-width: 220px;
+      width: 100%;
+      padding-left: 0; /* remove left padding */
+      margin: 0 auto;  /* center horizontally */
+      display: block;
+    }
+  
+    /* Platform page: hero and section images */
+    .platform-hero,
+    .platform-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* center child content */
+      text-align: center;
+      gap: 24px;
+    }
+  
+    .platform-hero .about-hero-image img,
+    .platform-section img {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  
   
   
   .about-text {
