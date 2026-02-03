@@ -702,4 +702,8 @@ footer {
       margin-right: auto;          /* center text like about page */
     }
   }
+
+  .no-bullets {
+    list-style: none;
+  }
   
