@@ -20,26 +20,6 @@
     rel="stylesheet"
   />
 
-  <script>
-    const toggle = document.querySelector(".nav-toggle");
-    const nav = document.querySelector(".site-nav");
-
-    toggle.addEventListener("click", () => {
-      const isOpen = nav.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", isOpen);
-    });
-  </script>
-
-  <script>
-    const toggle = document.querySelector(".nav-toggle");
-    const nav = document.querySelector(".site-nav");
-
-    toggle.addEventListener("click", () => {
-      console.log("hamburger clicked"); // 👈 test
-      nav.classList.toggle("open");
-    });
-  </script>
-
   <body>
     <header class="site-header">
       <div class="header-inner">
@@ -323,5 +303,18 @@
       </div>
       <p>Paid for by Martha Abraham for San Diego District 4</p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const toggle = document.querySelector(".nav-toggle");
+          const nav = document.querySelector(".site-nav");
+      
+          if (!toggle || !nav) return;
+      
+          toggle.addEventListener("click", () => {
+            const isOpen = nav.classList.toggle("open");
+            toggle.setAttribute("aria-expanded", isOpen);
+          });
+        });
+      </script>      
   </body>
 </html>
