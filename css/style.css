@@ -214,6 +214,7 @@ a {
   max-width: 180px;
   border-radius: 8px;
   margin-bottom: 12px;
+  align-content: center;
 }
 
 .team-member h3 {

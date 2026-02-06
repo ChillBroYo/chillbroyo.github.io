@@ -23,6 +23,12 @@
         <a href="index.html" class="logo">
           <img src="assets/logo.png" alt="Martha Abraham for District 4 Logo" />
         </a>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         <nav class="site-nav">
           <a href="about.html">About</a>
           <a href="platform.html">Priorities</a>
@@ -337,5 +343,18 @@
       </div>
       <p>Paid for by Martha Abraham for San Diego District 4</p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const toggle = document.querySelector(".nav-toggle");
+          const nav = document.querySelector(".site-nav");
+      
+          if (!toggle || !nav) return;
+      
+          toggle.addEventListener("click", () => {
+            const isOpen = nav.classList.toggle("open");
+            toggle.setAttribute("aria-expanded", isOpen);
+          });
+        });
+      </script>
   </body>
 </html>

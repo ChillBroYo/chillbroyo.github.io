@@ -28,6 +28,12 @@
           <img src="assets/logo.png" alt="Martha Abraham for District 4 Logo" />
         </a>
 
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         <!-- Navigation -->
         <nav class="site-nav">
           <a href="about.html">About</a>
@@ -61,22 +67,15 @@
 
       <section class="team-grid">
         <div class="team-member">
-          <img src="assets/team1.webp" alt="Alice Johnson" />
-          <h3>Alice Johnson</h3>
-          <p>Campaign Manager</p>
+          <img src="assets/filmon.webp" alt="Filmon Semere" />
+          <h3>Filmon Semere</h3>
+          <p>Community Representative </p>
+          <h4>
+            30 years living in District 4. Excited about improving the best district in San Diego.
+          </h4>
         </div>
         <div class="team-member">
-          <img src="assets/team2.webp" alt="David Lee" />
-          <h3>David Lee</h3>
-          <p>Communications Director</p>
-        </div>
-        <div class="team-member">
-          <img src="assets/team3.webp" alt="Maria Garcia" />
-          <h3>Maria Garcia</h3>
-          <p>Community Outreach Coordinator</p>
-        </div>
-        <div class="team-member">
-          <img src="assets/samson_tse.jpg" alt="Samson Tse image" />
+          <img src="assets/samson-tse.webp" alt="Samson Tse image" />
           <h3>Samson Tse</h3>
           <p>Public Relations Officer</p>
           <h4>
@@ -220,5 +219,18 @@
       </div>
       <p>Paid for by Martha Abraham for San Diego District 4</p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const toggle = document.querySelector(".nav-toggle");
+          const nav = document.querySelector(".site-nav");
+      
+          if (!toggle || !nav) return;
+      
+          toggle.addEventListener("click", () => {
+            const isOpen = nav.classList.toggle("open");
+            toggle.setAttribute("aria-expanded", isOpen);
+          });
+        });
+      </script>
   </body>
 </html>
