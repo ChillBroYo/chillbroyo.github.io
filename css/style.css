@@ -706,4 +706,77 @@ footer {
   .no-bullets {
     list-style: none;
   }
+
+  .list-bump {
+      margin-left: 5%;
+  }
   
+  /* ===== HAMBURGER BUTTON ===== */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+  
+  .nav-toggle span {
+    width: 26px;
+    height: 3px;
+    background: #0b3c7d;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  /* ===== MOBILE NAV ===== */
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: flex;
+    }
+  
+    .site-nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      display: none;
+      flex-direction: column;
+      align-items: stretch;
+      padding: 16px;
+      gap: 12px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    }
+  
+    .site-nav a {
+      font-size: 18px;
+      padding: 12px;
+      border-radius: 8px;
+    }
+  
+    .site-nav .volunteer-btn,
+    .site-nav .donate-btn {
+      text-align: center;
+      font-size: 18px;
+    }
+  
+    /* Open state */
+    .site-nav.open {
+      display: flex;
+    }
+  }
+  
+  .nav-toggle[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .nav-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .nav-toggle[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
