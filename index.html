@@ -23,13 +23,23 @@
   <script>
     const toggle = document.querySelector(".nav-toggle");
     const nav = document.querySelector(".site-nav");
-  
+
     toggle.addEventListener("click", () => {
       const isOpen = nav.classList.toggle("open");
       toggle.setAttribute("aria-expanded", isOpen);
     });
   </script>
-  
+
+  <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector(".site-nav");
+
+    toggle.addEventListener("click", () => {
+      console.log("hamburger clicked"); // 👈 test
+      nav.classList.toggle("open");
+    });
+  </script>
+
   <body>
     <header class="site-header">
       <div class="header-inner">
