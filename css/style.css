@@ -789,3 +789,49 @@ footer {
   .nav-toggle {
     z-index: 3000;
   }
+
+  .site-footer {
+    padding: 40px 16px;
+    text-align: center;
+    background: #f3f4f6;
+  }
+  
+  .footer-inner {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  
+  .footer-form input,
+  .footer-form textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+  }
+  
+  .footer-form button {
+    padding: 12px;
+    border-radius: 999px;
+    border: none;
+    background: #f3c84b;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .footer-form button:hover {
+    background: #e6bb3f;
+  }
+  
+  .footer-credit {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #666;
+  }
+  
